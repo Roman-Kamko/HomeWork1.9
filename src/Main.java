@@ -22,14 +22,14 @@ public class Main {
         в формате: «Минимальная сумма трат за день составила … рублей. Максимальная сумма
         трат за день составила … рублей».*/
 
-        int minSpending = 200_000 + 1;
+        int minSpending = arr[0];
         for (int current : arr) {
             if (current < minSpending) {
                 minSpending = current;
             }
         }
 
-        int maxSpending = 100_000 - 1;
+        int maxSpending = arr[0];
         for (int current : arr) {
             if (current > maxSpending) {
                 maxSpending = current;
